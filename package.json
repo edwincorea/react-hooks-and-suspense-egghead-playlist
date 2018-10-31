@@ -21,46 +21,45 @@
   },
   "eslintConfig": {
     "env": {
-        "es6": true,
-        "browser": true,
-        "node": true
+      "es6": true,
+      "browser": true,
+      "node": true
     },
     "extends": [
-        "react-app"
+      "react-app"
     ],
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 2018,
-        "sourceType": "module"
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module"
     },
     "plugins": [
-        "react"
+      "react"
     ],
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
-        "quotes": [
-            "warn",
-            "single"
-        ],
-        "semi": [
-            "warn",
-            "never"
-        ],
-        "no-console": "off",
-        "no-unused-vars": "warn",
-        "no-restricted-globals": "off",
-        
-        "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error"
+      "indent": [
+        "error",
+        4
+      ],
+      "linebreak-style": [
+        "error",
+        "windows"
+      ],
+      "quotes": [
+        "warn",
+        "single"
+      ],
+      "semi": [
+        "warn",
+        "never"
+      ],
+      "no-console": "off",
+      "no-unused-vars": "warn",
+      "no-restricted-globals": "off",
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error"
     }
   },
   "prettier": {
@@ -71,6 +70,12 @@
     "singleQuote": true,
     "trailingComma": "all",
     "bracketSpacing": false,
-    "jsxBracketSameLine": false  
-  }
+    "jsxBracketSameLine": false
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
