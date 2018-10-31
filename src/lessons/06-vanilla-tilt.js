@@ -3,31 +3,31 @@ import React, {useRef, useEffect} from 'react'
 import VanillaTilt from 'vanilla-tilt'
 
 function Tilt(props) {
-  const tiltRef = useRef()
-  useEffect(() => {
-    VanillaTilt.init(tiltRef.current, {
-      max: 25,
-      speed: 400,
-      glare: true,
-      'max-glare': 0.5,
-    })
-    return () => tiltRef.current.vanillaTilt.destroy()
-  }, [])
-  return (
-    <div ref={tiltRef} className="tilt-root">
-      <div className="tilt-child">{props.children}</div>
-    </div>
-  )
+    const tiltRef = useRef()
+    useEffect(() => {
+        VanillaTilt.init(tiltRef.current, {
+            max: 25,
+            speed: 400,
+            glare: true,
+            'max-glare': 0.5,
+        })
+        return () => tiltRef.current.vanillaTilt.destroy()
+    }, [])
+    return (
+        <div ref={tiltRef} className="tilt-root">
+            <div className="tilt-child">{props.children}</div>
+        </div>
+    )
 }
 
 function App() {
-  return (
-    <div className="totally-centered">
-      <Tilt>
-        <div className="totally-centered">vanilla-tilt.js</div>
-      </Tilt>
-    </div>
-  )
+    return (
+        <div className="totally-centered">
+            <Tilt>
+                <div className="totally-centered">vanilla-tilt.js</div>
+            </Tilt>
+        </div>
+    )
 }
 
 export default App
